@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cody Robot 隐私政策 · Privacy Policy</title><style>
+:root { --bg:#faf9f6; --fg:#1b1a17; --mut:#6b675f; --line:#e6e2da; --acc:#1b1a17; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --fg:#ecebe7; --mut:#a19d94; --line:#2c2a26; --acc:#ecebe7; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
+h1 { font-size:28px; line-height:1.3; margin:0 0 8px; }
+h2 { font-size:19px; margin:36px 0 8px; }
+p, li { color:var(--fg); }
+a { color:var(--acc); }
+table { border-collapse:collapse; width:100%; font-size:14px; margin:12px 0; display:block; overflow-x:auto; }
+th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+hr { border:0; border-top:1px solid var(--line); margin:56px 0; }
+nav { font-size:14px; color:var(--mut); margin-bottom:32px; }
+nav a { color:var(--mut); margin-right:16px; }
+.mut { color:var(--mut); font-size:14px; }
+</style></head>
+<body><main><nav><a href="../">Cody Robot</a><a href="../privacy/">隐私政策 Privacy</a><a href="../support/">支持 Support</a></nav><h1>Cody Robot 隐私政策</h1>
+<p>生效日期：2026 年 10 月 16 日　｜　English version below</p>
+<h2>一句话</h2>
+<p>Cody Robot 没有自己的服务器，没有账号，不追踪你。你的数据留在这台 iPhone 上；只有在你让助手做事时，完成这件事所需的内容才会发给<strong>你自己选择并配置的 AI 服务商</strong>。</p>
+<h2>1. 我们是谁</h2>
+<p>Cody Robot 由 cody（下称「我们」）开发。本政策说明 App 如何处理你的信息。</p>
+<h2>2. 我们不收集任何数据</h2>
+<p>我们不运营任何接收你数据的服务器。我们看不到你的对话、文件、API Key、健康数据、通讯录或日程，也不使用任何广告、分析、崩溃上报或追踪 SDK。App 不需要注册或登录。</p>
+<p>订阅（Cody Robot Pro）的购买、续订和取消全部由 Apple 的 App Store 处理，我们拿不到你的付款信息；App 只在本机向 iOS 查询订阅是否有效。</p>
+<h2>3. 数据存放在哪里</h2>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>存放位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>对话记录、任务、设置、记忆</td>
+<td>本机 App 容器内</td>
+</tr>
+<tr>
+<td>工作区文件（助手写的代码、你放入的文件）</td>
+<td>本机 <code>文稿/workspace</code>，可在「文件」App 中查看、导出、删除</td>
+</tr>
+<tr>
+<td>AI 服务商的 API Key</td>
+<td>iOS 钥匙串，仅本机可读、首次解锁后可用，<strong>不随备份迁移到其他设备</strong></td>
+</tr>
+</tbody>
+</table>
+<p>对话记录、记忆、工具记录、网页截图等 App 数据<strong>不进入</strong> iCloud 云备份或电脑备份（其中可能含有你问过的健康信息）；换新手机时它们不会随备份迁移。工作区里你的文件（在「文件」App 里可见）照常随备份。</p>
+<h2>4. 什么时候会把数据发出设备</h2>
+<p>只有一个去向：<strong>你在「设置 → 模型」中添加的 AI 服务商</strong>（例如 DeepSeek、通义千问、Kimi，或你自定义的兼容接口）。</p>
+<ul>
+<li>每家服务商<strong>第一次使用前</strong>，App 会说明会发送哪些内容，经你同意后才会发送。</li>
+<li>发送的内容：你输入的文字与添加的图片/文件；为完成你的请求、经你授权后读到的内容（见第 5 节）；agent 打开的网页、工作区文件和工具运行结果。</li>
+<li>发送使用你自己的 API Key，经 HTTPS 直连该服务商，不经过我们。</li>
+<li>服务商如何处理这些数据，以<strong>该服务商的用户协议和隐私政策</strong>为准。你可以随时在「设置 → 模型」中停用或删除某家服务商来停止发送。</li>
+</ul>
+<p>此外，当你要求助手访问某个网址（例如查资料、打开网页），App 会像浏览器一样直接请求那个网站。</p>
+<p>首页会显示当地天气：App 把约 1 公里精度的坐标（只有经纬度，不含城市名或任何身份信息）发给天气服务 Open-Meteo（open-meteo.com）查询当前天气，结果在本机缓存 15 分钟。没有授权位置时不显示天气，也不会发送任何请求。</p>
+<h2>5. 系统权限（全部可选，按需请求）</h2>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>用来做什么</th>
+<th>读 / 写</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日历</td>
+<td>你问日程或让助手安排时间时，读取相关时段的日程</td>
+<td>读；添加日程<strong>每次先请你确认</strong></td>
+</tr>
+<tr>
+<td>提醒事项</td>
+<td>查看待办、帮你记提醒</td>
+<td>读；添加提醒<strong>每次先请你确认</strong></td>
+</tr>
+<tr>
+<td>通讯录</td>
+<td>按名字查某人的电话、邮箱</td>
+<td><strong>只读</strong>，从不修改</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>回答健康趋势问题：步数、睡眠、静息心率、活动消耗</td>
+<td><strong>只读</strong>，从不写入健康数据</td>
+</tr>
+<tr>
+<td>位置（仅使用期间）</td>
+<td>首页显示当地天气；你问「附近」「这里」相关的问题时读一次大致位置：约 1 公里精度的坐标和所在城市、区县</td>
+<td>只读；不在后台定位，不记录轨迹</td>
+</tr>
+<tr>
+<td>麦克风、语音识别</td>
+<td>你点输入框旁的麦克风时，把说的话转成文字填进输入框</td>
+<td>只在你点麦克风后录音；设备支持时在本机识别，录音不保存、不发给 AI 服务商</td>
+</tr>
+<tr>
+<td>面容 ID / 触控 ID</td>
+<td>你打开「应用锁」后，用来解锁 App</td>
+<td>由 iOS 在本机比对，App 拿不到任何生物特征数据</td>
+</tr>
+<tr>
+<td>通知</td>
+<td>任务完成、需要你批准时提醒你；锁屏通知上可直接批准或拒绝（批准前要先解锁手机）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>除首页天气用到的大致位置外，只有在你提出相关请求时才会读取，且只读取完成请求所需的范围。读到的内容会作为第 4 节所述的内容发给你选择的 AI 服务商。健康数据不会用于广告、营销或数据挖掘，也不会写入 iCloud 云盘等云端存储。你可以随时在 iOS「设置 → 隐私与安全性」中撤销任何权限。</p>
+<h2>6. 追踪</h2>
+<p>我们不追踪你，不与数据经纪商共享数据，不投放广告，也不会请求 App 追踪透明度（ATT）权限。</p>
+<h2>7. 你的控制权</h2>
+<ul>
+<li><strong>查看与导出</strong>：工作区文件在「文件」App 中可见；对话可在 App 内复制。</li>
+<li><strong>删除</strong>：在 App 内删除对话或工作区文件；删除 App 会清除所有本地数据。钥匙串中的 API Key 可在「设置 → 模型」中删除。</li>
+<li><strong>停止外发</strong>：停用或删除 AI 服务商。</li>
+</ul>
+<p>因为我们不持有你的任何数据，我们无法替你查询、导出或删除——这些都由你在本机直接完成。对已发送给 AI 服务商的数据，请按该服务商的流程行使你的权利。</p>
+<h2>8. 儿童</h2>
+<p>Cody Robot 面向成年开发者与专业用户，不面向 13 岁以下儿童（或你所在地区规定的相应年龄），我们也不会有意处理儿童的个人信息。</p>
+<h2>9. 政策变更</h2>
+<p>如本政策有实质变更，我们会更新本页的生效日期，并在 App 更新说明中提示。</p>
+<h2>10. 联系我们</h2>
+<p>waring0000@gmail.com</p>
+<hr />
+<hr><h1>Cody Robot Privacy Policy</h1>
+<p>Effective: October 16, 2026</p>
+<h2>In one sentence</h2>
+<p>Cody Robot has no servers, no accounts, and no tracking. Your data stays on your iPhone; only when you ask the assistant to do something is the content needed for that task sent to <strong>the AI provider you chose and configured yourself</strong>.</p>
+<h2>1. Who we are</h2>
+<p>Cody Robot is developed by cody ("we"). This policy explains how the app handles your information.</p>
+<h2>2. We collect nothing</h2>
+<p>We operate no server that receives your data. We cannot see your conversations, files, API keys, health data, contacts or calendars, and the app contains no advertising, analytics, crash-reporting or tracking SDKs. No sign-up or login is required.</p>
+<p>Subscription (Cody Robot Pro) purchases, renewals and cancellations are handled entirely by Apple's App Store; we never see your payment information. The app only asks iOS on the device whether your subscription is active.</p>
+<h2>3. Where your data lives</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversations, tasks, settings, memory</td>
+<td>The app's container on this device</td>
+</tr>
+<tr>
+<td>Workspace files (code the assistant writes, files you add)</td>
+<td><code>Documents/workspace</code> on this device, visible, exportable and deletable in the Files app</td>
+</tr>
+<tr>
+<td>AI provider API keys</td>
+<td>iOS Keychain, this device only, available after first unlock, <strong>never migrated to other devices via backup</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Conversations, memories, tool records and web page snapshots are <strong>excluded</strong> from iCloud Backup and computer backups (they may contain health information you asked about), so they don't move to a new phone with a backup. Your own files in the workspace (visible in the Files app) are backed up as usual.</p>
+<h2>4. When data leaves the device</h2>
+<p>There is exactly one destination: <strong>the AI provider(s) you add under Settings → Models</strong> (for example DeepSeek, Qwen, Kimi, or a compatible endpoint you define).</p>
+<ul>
+<li><strong>Before a provider is used for the first time</strong>, the app explains what will be sent and only proceeds after you agree.</li>
+<li>What is sent: text you type and images/files you add; content read with your permission to fulfil your request (see section 5); web pages the agent opens, workspace files and tool results.</li>
+<li>It is sent with your own API key over HTTPS directly to that provider, never through us.</li>
+<li>How the provider handles it is governed by <strong>that provider's terms and privacy policy</strong>. Disable or delete a provider in Settings → Models at any time to stop sending.</li>
+</ul>
+<p>In addition, when you ask the assistant to visit a URL, the app requests that website directly, as a browser would.</p>
+<p>The home screen shows your local weather: the app sends coordinates at about 1 km accuracy (latitude and longitude only, no city name or identity) to the weather service Open-Meteo (open-meteo.com) to look up the current weather, and caches the result on the device for 15 minutes. Without location permission no weather is shown and no request is sent.</p>
+<h2>5. System permissions (all optional, requested only when needed)</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Used for</th>
+<th>Read / write</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calendars</td>
+<td>Reading events in the relevant time range when you ask about your schedule</td>
+<td>Read; <strong>asks you to confirm every event it adds</strong></td>
+</tr>
+<tr>
+<td>Reminders</td>
+<td>Checking to-dos and noting reminders</td>
+<td>Read; <strong>asks you to confirm every reminder it adds</strong></td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Looking up someone's phone or email by name</td>
+<td><strong>Read-only</strong>, never modified</td>
+</tr>
+<tr>
+<td>Health</td>
+<td>Answering questions about trends: steps, sleep, resting heart rate, active energy</td>
+<td><strong>Read-only</strong>, never writes health data</td>
+</tr>
+<tr>
+<td>Location (while using)</td>
+<td>Showing your local weather on the home screen, and reading your approximate location once when you ask about things "nearby" or "here": coordinates at about 1 km accuracy, plus city and district</td>
+<td>Read-only; no background location, no location history</td>
+</tr>
+<tr>
+<td>Microphone, Speech Recognition</td>
+<td>Turning what you say into text in the input box after you tap the microphone</td>
+<td>Records only after you tap the microphone; recognized on the device when supported; audio is not stored and never sent to the AI provider</td>
+</tr>
+<tr>
+<td>Face ID / Touch ID</td>
+<td>Unlocking the app when App Lock is on</td>
+<td>Matched by iOS on the device; the app never receives biometric data</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>Telling you when a task finishes or needs your approval; you can approve or reject right from the notification (approving requires unlocking your phone)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>Apart from the approximate location used for the home-screen weather, data is read only when you make a related request, and only as much as the request needs. What is read is sent to your chosen AI provider as described in section 4. Health data is never used for advertising, marketing or data mining, and is never stored in iCloud Drive or other cloud storage. You can revoke any permission in iOS Settings → Privacy &amp; Security.</p>
+<h2>6. Tracking</h2>
+<p>We do not track you, share data with data brokers, or show ads, and the app never requests App Tracking Transparency permission.</p>
+<h2>7. Your controls</h2>
+<ul>
+<li><strong>View and export</strong>: workspace files are visible in the Files app; conversations can be copied in the app.</li>
+<li><strong>Delete</strong>: delete conversations or workspace files in the app; deleting the app removes all local data. API keys in the Keychain can be deleted in Settings → Models.</li>
+<li><strong>Stop sending</strong>: disable or delete an AI provider.</li>
+</ul>
+<p>Because we hold none of your data, we cannot look it up, export it or delete it for you; you do all of this directly on your device. For data already sent to an AI provider, exercise your rights through that provider.</p>
+<h2>8. Children</h2>
+<p>Cody Robot is intended for adult developers and professionals, not for children under 13 (or the equivalent minimum age in your region), and we do not knowingly process children's personal information.</p>
+<h2>9. Changes</h2>
+<p>If this policy changes materially, we will update the effective date on this page and mention it in the app's release notes.</p>
+<h2>10. Contact</h2>
+<p>waring0000@gmail.com</p></main></body></html>
